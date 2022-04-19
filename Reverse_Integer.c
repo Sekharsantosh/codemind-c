@@ -1,22 +1,13 @@
 #include<stdio.h>
 int main()
-{    
-    signed int i,r,rev=0;
-    scanf("%d",&i);
-    while (i != 0) 
+{
+    signed int n,rev=0,r;
+    scanf("%d",&n);
+    while(n)
     {
-        r=i%10;
-        rev=(rev*10+r);
-        i /=10;
-       
+        r=n%10;
+        rev=rev*10+r;
+        n=n/10;
     }
-    if(i==rev)
-	{
-		printf("%d",rev);
-	}
-	else
-	{
-		printf("%d",rev);
-	}
-    return 0;
+    printf("%d",rev);
 }
