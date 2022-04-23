@@ -1,17 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,r,rev;
+    int n,r,rev=0,e;
     scanf("%d",&n);
-    rev=0;
-    i=n;
-    while(n)
+    e=n;
+    while(e)
     {
-        r=n%10;
+        r=e%10;
         rev=rev*10+r;
-        n=n/10;
+        e=e/10;
     }
-    if(rev==i)
+    if(rev==n)
     {
         printf("True");
     }
