@@ -3,24 +3,25 @@ int main()
 {
     int n;
     scanf("%d",&n);
-    int a[n],i,c=0;
-    for(i=1;i<=n;i++)
+    int a[n],j,c=0;
+    for(j=1;j<=n;j++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&a[j]);
     }
-    for(i=1;i<=n;i++)
+    for(j=1;j<=n;j++)
     {
-        if(i%2==0 && a[i]%2==0)
+        if(j%2==0 && a[j]%2==0)
         {
             c=1;
         }
     }
     if(c==1)
     {
-        printf("False");
+       printf("False");
     }
     else
     {
-        printf("True");
+         printf("True");
+        
     }
 }
